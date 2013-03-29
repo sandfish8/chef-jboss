@@ -16,7 +16,7 @@ end
 
 # template init file
 template "/etc/init.d/#{jboss_user}" do
-  if platform? ["centos", "redhat"] 
+  if platform? ["centos", "redhat", "scientific"] 
     source "init_standalone_el.erb"
   else
     source "init_deb.erb"
