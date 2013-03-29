@@ -11,6 +11,6 @@ end
 
 recipe "jboss", "installs jboss from the jboss community site"
 
-%w{ debian ubuntu centos redhat fedora }.each do |os|
+%w{ debian ubuntu centos redhat fedora scientific }.each do |os|
   supports os
 end
